@@ -55,58 +55,13 @@
         background-size: cover;
         font-weight: bold;
 }
-      
-      .collapsible {
-position:sticky;
-left: 0;
-bottom: 0;
-   width: 100%;
-   background-image: url("https://seedname101.github.io/p30-3/thba.jpg");
-   color: black;
-   text-align: left;
-   text-size: 7px;
-    background-size: cover;
-        font-weight: bold;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-image: url("https://seedname101.github.io/p30-3/thba.jpg");
-   color: black;
-   text-align: left;
-  text-size: 7px;
-  background-size: cover;
-  font-weight: bold;
-  
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  
-}
+      a.ema{
+      color:black;
+      font-weight: bold;
+      }
     </style>
 </head>
   <body>
-    <button class="collapsible">Open Contact Information</button>
   <h1 class = "title">All Topics</h1>
     <div id = "container">
     <a href="https://seedname101.github.io/p30/" class="button">Click to return to main page</a></div>
@@ -136,28 +91,9 @@ bottom: 0;
 <div id = "UIA" class = "card"><h2 class = "text">Poem Topic: </h2><h3 class = "text">Up in the Air 4/2/19</h3><h3 class = "text">Format: None</h3><p class = "text">Are You There<br>Or is it your wish<br>To Fly high in the air</p><h6 class = "text">Sources: <a target= "_blank" href = "http://3030poetry.com/">Word X Words Poetry 30/30</a> and Mr.Capley</h6></div>
     <br>
  <div id = "SAT" class = "card"><h2 class = "text">Poem Topic: </h2><h3 class = "text">Streets at Dawn 4/1/19</h3><h3 class = "text">Format: None</h3><p class = "text">This poem is beautiful with imagery.</p><h6 class = "text">Sources: <a target= "_blank" href = "http://3030poetry.com/">Word X Words Poetry 30/30</a> and Mr.Capley</h6></div>
-<div class="content">
-   <div class="collapsible">
-  <p><a href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
+  <div class="footer">
+  <p><a class = "ema" href="mailto:juliandominguez0415@gmail.com">Contact Me</a></p>
   <p>Made By Julian Dominguez</p>
 </div>
-</div>
-
-  <script text="javascript">
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-      } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
   </body>
 </html>
